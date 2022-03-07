@@ -53,8 +53,8 @@ else:
 
 train_corpus, train_label,valid_corpus,valid_label,test_corpus, test_label = cls_model.load_dataset()
 
-train_corpus = train_corpus[:10]
-train_label = train_label[:10]
+train_corpus = train_corpus[:100]
+train_label = train_label[:100]
 
 train_set = [(train_corpus[i], train_label[i]) for i in range(len(train_corpus))]
 
@@ -191,7 +191,8 @@ for epoch in range(config.num_epochs):
             epoch_accuracy += torch.argmax(logits,dim = 1).eq(batch_ys).sum().item()/batch_size
             loss.backward()
             cls_model.optimizer.step()
-    
+    if epoch_loss==0:
+        epoch_loss = 0.0001
     epoch_loss /= batches_per_epoch
     epoch_accuracy /= batches_per_epoch      
     print(epoch,' ',epoch_loss, ' ',epoch_accuracy)    
