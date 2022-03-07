@@ -7,6 +7,7 @@ from textattack.models.bert_models import BertSModel, Attacker
 from transformers import BertTokenizer, BertForSequenceClassification, AdamW
 
 import os
+from tqdm import tqdm
 
 def write_adv(file_addr, orig_list, adv_list, label_list):
     with open(file_addr, 'w', encoding = 'utf-8') as f:
@@ -53,8 +54,8 @@ else:
 
 train_corpus, train_label,valid_corpus,valid_label,test_corpus, test_label = cls_model.load_dataset()
 
-train_corpus = train_corpus[:100]
-train_label = train_label[:100]
+# train_corpus = train_corpus[:100]
+# train_label = train_label[:100]
 
 train_set = [(train_corpus[i], train_label[i]) for i in range(len(train_corpus))]
 
@@ -84,7 +85,6 @@ test_ys = np.array(test_label)
 
 batch_size = config.batch_size
 global_acc = 0
-global_ep_acc = 0
 
 for epoch in range(config.num_epochs):
     epoch_loss = 0
@@ -94,7 +94,7 @@ for epoch in range(config.num_epochs):
         num_examples = concat_train_xs.shape[0]
         selection = np.random.choice(num_examples,size = num_examples,replace = False)
         batches_per_epoch = num_examples // batch_size
-        for idx in range(batches_per_epoch):
+        for idx in tqdm(range(batches_per_epoch)):
             batch_idx = np.array(selection[idx * batch_size:(idx + 1) * batch_size])
             batch_xs = torch.LongTensor(concat_train_xs[batch_idx]).to(cls_model.device)
             batch_ys = torch.LongTensor(concat_train_ys[batch_idx]).to(cls_model.device)
@@ -127,7 +127,7 @@ for epoch in range(config.num_epochs):
         num_examples = concat_train_xs.shape[0]
         selection = np.random.choice(num_examples,size = num_examples,replace = False)
         batches_per_epoch = num_examples // batch_size
-        for idx in range(batches_per_epoch):
+        for idx in tqdm(range(batches_per_epoch)):
             batch_idx = np.array(selection[idx * batch_size:(idx + 1) * batch_size])
             batch_xs = torch.LongTensor(concat_train_xs[batch_idx]).to(cls_model.device)
             batch_ys = torch.LongTensor(concat_train_ys[batch_idx]).to(cls_model.device)
@@ -150,7 +150,7 @@ for epoch in range(config.num_epochs):
         num_examples = train_xs.shape[0]
         selection = np.random.choice(num_examples,size = num_examples,replace = False)
         batches_per_epoch = num_examples // batch_size        
-        for idx in range(batches_per_epoch):
+        for idx in tqdm(range(batches_per_epoch)):
             batch_idx = selection[idx * batch_size:(idx + 1) * batch_size]
             batch_corpus = [train_corpus[x] for x in batch_idx]
             batch_labels = [train_label[x] for x in batch_idx]
@@ -191,18 +191,11 @@ for epoch in range(config.num_epochs):
             epoch_accuracy += torch.argmax(logits,dim = 1).eq(batch_ys).sum().item()/batch_size
             loss.backward()
             cls_model.optimizer.step()
-    if epoch_loss==0:
-        epoch_loss = 0.0001
-    epoch_loss /= batches_per_epoch
-    epoch_accuracy /= batches_per_epoch      
-    print(epoch,' ',epoch_loss, ' ',epoch_accuracy)    
-    # print('Train accuracy = ', cls_model.evaluate_accuracy(train_xs,train_ys,train_masks,batch_size))
-    # if epoch_accuracy > global_ep_acc:
-    #     epoch_accuracy = global_ep_acc
-    #     if not os.path.exists(cls_model.output_dir_rb):
-    #         os.makedirs(cls_model.output_dir_rb)
-    #     cls_model.model.save_pretrained(cls_model.output_dir_rb)
-    #     cls_model.tokenizer.save_pretrained(cls_model.output_dir_rb)
+
+        epoch_loss /= batches_per_epoch
+        epoch_accuracy /= batches_per_epoch      
+        print(epoch,' ',epoch_loss, ' ',epoch_accuracy)    
+
 
     local_acc = cls_model.evaluate_accuracy(valid_xs, valid_ys, valid_masks, batch_size)
     print("valid accuracy = ", local_acc)
