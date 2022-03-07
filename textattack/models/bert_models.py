@@ -19,9 +19,9 @@ class BertSModel():
     S: refer to sentence
     '''
     def __init__(self,model_type = 'bert-base-uncased',fine_tune_dir = None, 
-                       output_dir = '/mnt/cloud/bairu/repos/TextAttack/checkpoints/bert-sst-at/',
-                       cache_dir = '/mnt/cloud/bairu/model_cache/bert_model/bert-base-uncased/',
-                       dataset_dir = '/mnt/cloud/bairu/repos/text_grad/sst-2/',
+                       output_dir = 'repos/TextAttack/checkpoints/bert-sst-at/',
+                       cache_dir = 'model_cache/bert_model/bert-base-uncased/',
+                       dataset_dir = 'repos/text_grad/sst-2/',
                        max_len = 100,
                        device = torch.device("cuda"),
                        num_labels = 2):

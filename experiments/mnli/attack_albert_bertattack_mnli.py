@@ -11,7 +11,7 @@ from textattack.datasets import HuggingFaceDataset
 from textattack.models.wrappers import ModelWrapper, huggingface_model_wrapper
 from textattack.models.wrappers import HuggingFaceModelWrapper
 
-def load_dataset_mnli(path = '/mnt/cloud/bairu/repos/std_text_pgd_attack/mnli-3/'):
+def load_dataset_mnli(path = 'repos/std_text_pgd_attack/mnli-3/'):
     def process_file(file):    
         data_list = []
         with open(path + file,'r',encoding = 'utf-8') as f:
@@ -23,7 +23,7 @@ def load_dataset_mnli(path = '/mnt/cloud/bairu/repos/std_text_pgd_attack/mnli-3/
     test_dataset = process_file("test.tsv")
     return test_dataset
 
-directory = '/mnt/cloud/bairu/repos/std_text_pgd_attack/checkpoints/albert-xxlarge-v2-mnli'
+directory = 'repos/std_text_pgd_attack/checkpoints/albert-xxlarge-v2-mnli'
 model = AlbertForSequenceClassification.from_pretrained(directory)
 tokenizer = AlbertTokenizer.from_pretrained(directory)
 wrapper_model = huggingface_model_wrapper.HuggingFaceModelWrapper(model, tokenizer)

@@ -11,7 +11,7 @@ from textattack.datasets import HuggingFaceDataset
 from textattack.models.wrappers import ModelWrapper, huggingface_model_wrapper
 from textattack.models.wrappers import HuggingFaceModelWrapper
 
-def load_dataset_sst(path = '/mnt/cloud/bairu/repos/text_pgd_attack/sst-2/'):
+def load_dataset_sst(path = 'repos/text_pgd_attack/sst-2/'):
     def process_file(file):    
         # sentence_list = []
         # label_list = []
@@ -27,9 +27,9 @@ def load_dataset_sst(path = '/mnt/cloud/bairu/repos/text_pgd_attack/sst-2/'):
     test_dataset = process_file("test.tsv")
     return test_dataset
 
-directory = '/mnt/cloud/bairu/repos/text_pgd_attack/checkpoints/bert-base-uncased-sst'
+directory = 'repos/text_pgd_attack/checkpoints/bert-base-uncased-sst'
 model = BertForSequenceClassification.from_pretrained(directory)
-tokenizer = BertTokenizer.from_pretrained('/mnt/cloud/bairu/repos/text_pgd_attack/checkpoints/bert-base-uncased-sst')
+tokenizer = BertTokenizer.from_pretrained('repos/text_pgd_attack/checkpoints/bert-base-uncased-sst')
 wrapper_model = huggingface_model_wrapper.HuggingFaceModelWrapper(model, tokenizer)
 recipe = MyBERTAttackLi2020.build(wrapper_model)
 

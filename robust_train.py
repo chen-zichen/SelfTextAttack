@@ -21,6 +21,7 @@ def write_adv(file_addr, orig_list, adv_list, label_list):
 class Config():
     model_type = 'bert-base-uncased'
     output_dir = 'repos/TextAttack/checkpoints/bert-sst-at/'
+    output_dir_rb = 'repos/TextAttack/checkpoints/bert-sst-at/rb'
     dataset_dir = 'repos/text_grad/sst-2/'
     cache_dir = 'model_cache/bert_model/bert-base-uncased/'
     finetune_dir = 'repos/text_grad/checkpoints/bert-base-uncased-sst/'
@@ -52,8 +53,6 @@ else:
 
 train_corpus, train_label,valid_corpus,valid_label,test_corpus, test_label = cls_model.load_dataset()
 
-train_corpus = train_corpus[:100]
-train_label = train_label[:100]
 
 train_set = [(train_corpus[i], train_label[i]) for i in range(len(train_corpus))]
 
@@ -83,6 +82,8 @@ test_ys = np.array(test_label)
 
 batch_size = config.batch_size
 global_acc = 0
+global_ep_acc = 0
+
 for epoch in range(config.num_epochs):
     epoch_loss = 0
     epoch_accuracy = 0
@@ -193,14 +194,22 @@ for epoch in range(config.num_epochs):
     epoch_accuracy /= batches_per_epoch      
     print(epoch,' ',epoch_loss, ' ',epoch_accuracy)    
     # print('Train accuracy = ', cls_model.evaluate_accuracy(train_xs,train_ys,train_masks,batch_size))
+    # if epoch_accuracy > global_ep_acc:
+    #     epoch_accuracy = global_ep_acc
+    #     if not os.path.exists(cls_model.output_dir_rb):
+    #         os.makedirs(cls_model.output_dir_rb)
+    #     cls_model.model.save_pretrained(cls_model.output_dir_rb)
+    #     cls_model.tokenizer.save_pretrained(cls_model.output_dir_rb)
+
     local_acc = cls_model.evaluate_accuracy(valid_xs, valid_ys, valid_masks, batch_size)
     print("valid accuracy = ", local_acc)
-    if local_acc > global_acc:
-        global_acc = local_acc
-        if not os.path.exists(cls_model.output_dir):
-            os.makedirs(cls_model.output_dir)
-        cls_model.model.save_pretrained(cls_model.output_dir)
-        cls_model.tokenizer.save_pretrained(cls_model.output_dir)
+    # if local_acc > global_acc:
+    #     global_acc = local_acc
+    if not os.path.exists(cls_model.output_dir):
+        os.makedirs(cls_model.output_dir)
+    save_path = cls_model.output_dir + epoch
+    cls_model.model.save_pretrained(save_path)
+    cls_model.tokenizer.save_pretrained(save_path)
 
 
 cls_model.model = BertForSequenceClassification.from_pretrained(cls_model.output_dir)

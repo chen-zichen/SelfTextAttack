@@ -23,7 +23,7 @@ def load_dataset_rte(path = ''):
     test_dataset = process_file("test.tsv")
     return test_dataset
 
-directory = '/mnt/cloud/bairu/repos/std_text_pgd_attack/checkpoints/albert-xxlarge-v2-rte'
+directory = 'repos/std_text_pgd_attack/checkpoints/albert-xxlarge-v2-rte'
 model = AlbertForSequenceClassification.from_pretrained(directory)
 tokenizer = AlbertTokenizer.from_pretrained(directory)
 wrapper_model = huggingface_model_wrapper.HuggingFaceModelWrapper(model, tokenizer)

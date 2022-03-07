@@ -11,7 +11,7 @@ from textattack.datasets import HuggingFaceDataset
 from textattack.models.wrappers import ModelWrapper, huggingface_model_wrapper
 from textattack.models.wrappers import HuggingFaceModelWrapper
 
-def load_dataset_sst(path = '/mnt/cloud/bairu/repos/text_pgd_attack/sst-2/'):
+def load_dataset_sst(path = 'repos/text_pgd_attack/sst-2/'):
     def process_file(file):    
         # sentence_list = []
         # label_list = []
@@ -27,7 +27,7 @@ def load_dataset_sst(path = '/mnt/cloud/bairu/repos/text_pgd_attack/sst-2/'):
     test_dataset = process_file("test.tsv")
     return test_dataset
 
-directory = '/mnt/cloud/bairu/repos/std_text_pgd_attack/checkpoints/roberta-large-sst'
+directory = 'repos/std_text_pgd_attack/checkpoints/roberta-large-sst'
 model = RobertaForSequenceClassification.from_pretrained(directory)
 tokenizer = RobertaTokenizer.from_pretrained(directory)
 wrapper_model = huggingface_model_wrapper.HuggingFaceModelWrapper(model, tokenizer)
