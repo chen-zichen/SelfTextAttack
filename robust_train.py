@@ -21,16 +21,17 @@ def write_adv(file_addr, orig_list, adv_list, label_list):
 
 class Config():
     model_type = 'bert-base-uncased'
-    output_dir = 'repos/TextAttack/checkpoints/bert-sst-at/'
+    output_dir = 'repos/TextAttack/checkpoints/bert-sst-at/else'
     output_dir_rb = 'repos/TextAttack/checkpoints/bert-sst-at/rb'
     dataset_dir = 'repos/text_grad/sst-2/'
     cache_dir = 'model_cache/bert_model/bert-base-uncased/'
     finetune_dir = 'repos/text_grad/checkpoints/bert-base-uncased-sst/'
+    # finetune_dir = 'repos/TextAttack/checkpoints/bert-sst-at/0'
     num_labels = 2
     log_dir = 'ATLog/'
 
-    # at_type = 'augmentation'  ## augmentation/epoch_aug/batch_aug
-    at_type = 'epoch_aug'  ## augmentation/epoch_aug/batch_aug
+    at_type = 'augmentation'  ## augmentation/epoch_aug/batch_aug
+    # at_type = 'epoch_aug'  ## augmentation/epoch_aug/batch_aug
     # at_type = 'batch_aug'  ## augmentation/epoch_aug/batch_aug
 
     num_epochs = 5
