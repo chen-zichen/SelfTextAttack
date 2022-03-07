@@ -55,8 +55,8 @@ else:
 
 train_corpus, train_label,valid_corpus,valid_label,test_corpus, test_label = cls_model.load_dataset()
 
-train_corpus = train_corpus[:50]
-train_label = train_label[:50]
+# train_corpus = train_corpus[:50]
+# train_label = train_label[:50]
 
 train_set = [(train_corpus[i], train_label[i]) for i in range(len(train_corpus))]
 
@@ -206,7 +206,7 @@ for epoch in range(config.num_epochs):
     #     global_acc = local_acc
     if not os.path.exists(cls_model.output_dir):
         os.makedirs(cls_model.output_dir)
-    save_path = cls_model.output_dir + str(epoch)
+    save_path = cls_model.output_dir + '/' + str(epoch)
     cls_model.model.save_pretrained(save_path)
     cls_model.tokenizer.save_pretrained(save_path)
 
