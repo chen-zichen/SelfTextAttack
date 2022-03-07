@@ -134,7 +134,7 @@ class BertSModel():
         test_batches = test_xs.shape[0]//batch_size
         test_accuracy = 0.0
         self.model.eval()
-        for i in range(test_batches):
+        for i in range(int(test_batches)):
             test_idx = range(i * batch_size,(i + 1)*batch_size)
             xs = torch.LongTensor(test_xs[test_idx,:]).to(self.device)
             ys = test_ys[test_idx]

@@ -1,9 +1,17 @@
 a stirring , funny and finally transporting re-imagining of beauty and the beast and 1930s horror films
+<<<<<<< HEAD
 a backwater , joke and finally traffic re-imagining of beauty and the beast and 1930s creepy films
 1
 
 apparently reassembled from the cutting-room floor of any given daytime soap .
 apparently reassembled from the cutting-room floor of any made daytime soap .
+=======
+a stirring , giggling and finally traffic re-imagining of hotness and the jerk and 1930s horror films
+1
+
+apparently reassembled from the cutting-room floor of any given daytime soap .
+apparently reassembled from the cutting-room soils of any given daytime soap .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 0
 
 they presume their audience wo n't sit still for a sociology lesson , however entertainingly presented , so they trot out the conventional science-fiction elements of bug-eyed monsters and futuristic women in skimpy clothes .
@@ -11,6 +19,7 @@ they presume their audience ne n't sit still for a sociology lesson , however en
 0
 
 this is a visually stunning rumination on love , memory , history and the war between art and commerce .
+<<<<<<< HEAD
 this is a aesthetically stun rumination on dear , dissertation , yesteryear and the war between art and commerce .
 1
 
@@ -20,6 +29,17 @@ jonathan parker 's bartleby should have been the be-all-end-all of the modern-of
 
 campanella gets the tone just right -- funny in the middle of sad in the middle of hopeful .
 koufax gets the tone just right -- odd in the middle of sad in the middle of expect .
+=======
+this is a visually stun rumination on iove , mem , yesteryear and the war between art and merchandising .
+1
+
+jonathan parker 's bartleby should have been the be-all-end-all of the modern-office anomie films .
+terrance parker 's bartleby should have been the be-all-end-all of the modern-office anomie films .
+1
+
+campanella gets the tone just right -- funny in the middle of sad in the middle of hopeful .
+campanella gets the undertone just allright -- jest in the middle of sad in the middle of hope .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 a fan film that for the uninitiated plays better on video with the sound turned down .
@@ -27,7 +47,11 @@ a fan film that for the uninitiated plays better on video with the sounds turned
 0
 
 béart and berling are both superb , while huppert ... is magnificent .
+<<<<<<< HEAD
 béart and berling are both funky , while huppert ... is super .
+=======
+béart and berling are both extraordinaire , while huppert ... is grandiose .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 a little less extreme than in the past , with longer exposition sequences between them , and with fewer gags to break the tedium .
@@ -35,6 +59,7 @@ a little less extreme than in the bygone , with longer exposition sequences betw
 0
 
 the film is strictly routine .
+<<<<<<< HEAD
 the video is strictly routine .
 0
 
@@ -44,13 +69,25 @@ a rhythmic metaphor for cultural and chattel self-discovery and a picaresque ide
 
 the most repugnant adaptation of a classic text since roland joffé and demi moore 's the scarlet letter .
 the most repugnant adaptation of a classic text since roland joffé and demi moore 's the scarlett letter .
+=======
+the film is merely routine .
+0
+
+a lyrical metaphor for cultural and personal self-discovery and a picaresque view of a little-remembered world .
+a rhythmic metaphor for cultural and anybody self-discovery and a picaresque visualized of a little-remembered globo .
+1
+
+the most repugnant adaptation of a classic text since roland joffé and demi moore 's the scarlet letter .
+the most repugnant adaptation of a classic texts since roland joffé and demi moore 's the scarlet letter .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 0
 
 for something as splendid-looking as this particular film , the viewer expects something special but instead gets -lrb- sci-fi -rrb- rehash .
-for something as splendid-looking as this particular film , the viewer expects something especial but instead gets -lrb- sci-fi -rrb- rehash .
+for something as splendid-looking as this particular movie , the viewer expects something special but instead gets -lrb- sci-fi -rrb- rehash .
 0
 
 this is a stunning film , a one-of-a-kind tour de force .
+<<<<<<< HEAD
 this is a dramatic theater , a one-of-a-kind tour de troupes .
 1
 
@@ -60,6 +97,17 @@ may was more genial than smart , but it gets the occupations done .
 
 there is a freedom to watching stunts that are this crude , this fast-paced and this insane .
 there is a libre to watching stunt that are this crude , this fast-paced and this insanity .
+=======
+this is a sensational film , a one-of-a-kind tour de force .
+1
+
+may be more genial than ingenious , but it gets the job done .
+may got more affable than malignant , but it gets the job done .
+1
+
+there is a freedom to watching stunts that are this crude , this fast-paced and this insane .
+there is a svoboda to watching stunts that are this vulgar , this fast-paced and this craziness .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 if the tuxedo actually were a suit , it would fit chan like a $ 99 bargain-basement special .
@@ -67,11 +115,19 @@ if the tuxedo actually were a suit , it would fitting chan like a $ 99 bargain-b
 0
 
 as quiet , patient and tenacious as mr. lopez himself , who approaches his difficult , endless work with remarkable serenity and discipline .
+<<<<<<< HEAD
 as quiet , morbid and tenacious as mr. lopez himself , who approaches his difficult , endless work with astonishing serenity and discipline .
 1
 
 final verdict : you 've seen it all before .
 eventual verdict : you 've seen it all before .
+=======
+as quiet , ill and unyielding as mr. calderon himself , who approaches his difficult , indeterminate tasks with prodigious serenity and discipline .
+1
+
+final verdict : you 've seen it all before .
+final verdict : you 've construed it all before .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 0
 
 blue crush follows the formula , but throws in too many conflicts to keep the story compelling .
@@ -79,11 +135,19 @@ blue crush follows the formulas , but throws in too many conflicts to keep the s
 0
 
 you ... get a sense of good intentions derailed by a failure to seek and strike just the right tone .
+<<<<<<< HEAD
 you ... have a sense of good intentions derailed by a failure to seek and strike just the right tone .
 0
 
 a slick , engrossing melodrama .
 a slick , denouement melodrama .
+=======
+you ... get a feeling of good intentions derailed by a failure to seek and strike just the right tone .
+0
+
+a slick , engrossing melodrama .
+a smear , engrossing melodrama .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 a wretched movie that reduces the second world war to one man 's quest to find an old flame .
@@ -91,6 +155,7 @@ a wretched movie that reduces the second monde war to one man 's quest to find a
 0
 
 will undoubtedly play well in european markets , where mr. besson is a brand name , and in asia , where ms. shu is an institution , but american audiences will probably find it familiar and insufficiently cathartic .
+<<<<<<< HEAD
 will undoubtedly play well in european markets , where mr. besson is a brand name , and in asia , where ms. shu is an institution , but american audiences will likely find it familiar and insufficiently cathartic .
 0
 
@@ -104,6 +169,21 @@ the claus clause 2 depicts itself a more simplistic and cru out encounter than t
 
 the film is moody , oozing , chilling and heart-warming all at once ... a twisting , unpredictable , cat-and-mouse thriller .
 the movie is morose , dripping , colder and heart-warming all at once ... a twisting , casual , cat-and-mouse thriller .
+=======
+will undoubtedly play well in european markets , where mr. besson is a brand name , and in asia , where ms. shu is an institution , but american audiences will probably find it accustomed and insufficiently cathartic .
+0
+
+lacks the inspiration of the original and has a bloated plot that stretches the running time about 10 minutes past a child 's interest and an adult 's patience .
+lacks the inspiration of the original and has a bloated plot that stretches the running time about 10 minutes past a child 's interests and an adult 's patience .
+0
+
+the santa clause 2 proves itself a more streamlined and thought out encounter than the original could ever have hoped to be .
+the santa clause 2 proves itself a more abridged and crus out encounter than the original could ever have hoped to be .
+1
+
+the film is moody , oozing , chilling and heart-warming all at once ... a twisting , unpredictable , cat-and-mouse thriller .
+the film is irritable , oozing , macabre and heart-warming all at once ... a twisting , wayward , cat-and-mouse thriller .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 too bad .
@@ -111,7 +191,11 @@ too bad .
 0
 
 a strong first act and absolutely , inescapably gorgeous , skyscraper-trapeze motion of the amazing spider-man .
+<<<<<<< HEAD
 a tight first act and categorically , inescapably super , skyscraper-trapeze motion of the funky spider-man .
+=======
+a stiff first act and unmistakably , inescapably magnifique , skyscraper-trapeze motion of the dramatic spider-man .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 gooding offers a desperately ingratiating performance .
@@ -119,7 +203,11 @@ gooding offers a desperately ingratiating performance .
 0
 
 a well-intentioned effort that 's still too burdened by the actor 's offbeat sensibilities for the earnest emotional core to emerge with any degree of accessibility .
+<<<<<<< HEAD
 a well-intentioned effort that 's still too burdened by the actors 's offbeat sensibilities for the earnest emotional core to emerge with any degree of accessibility .
+=======
+a well-intentioned effort that 's still too burdened by the actor 's offbeat sensibilities for the gravely emotional core to emerge with any degree of accessibility .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 0
 
 a fun ride .
@@ -127,7 +215,11 @@ a joke ride .
 1
 
 an edgy thriller that delivers a surprising punch .
+<<<<<<< HEAD
 an edgy thriller that delivers a supernatural blowout .
+=======
+an edgy slasher that delivers a supernatural punch .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 ` what 's the russian word for wow !? '
@@ -135,6 +227,7 @@ an edgy thriller that delivers a supernatural blowout .
 1
 
 otto-sallies has a real filmmaker 's eye .
+<<<<<<< HEAD
 otto-sallies has a actual filmmaker 's ojo .
 1
 
@@ -144,6 +237,17 @@ lurid and less than logical work .
 
 with its parade of almost perpetually wasted characters ... margarita feels like a hazy high that takes too long to shake .
 with its parade of almost perpetually wasted characters ... margarita feels like a indistinct high that takes too long to shake .
+=======
+otto-sallies has a actual cameraman 's eye .
+1
+
+lurid and less than lucid work .
+lurid and less than sensible work .
+0
+
+with its parade of almost perpetually wasted characters ... margarita feels like a hazy high that takes too long to shake .
+with its parade of almost perpetually wasted characters ... margherita feels like a hazy high that takes too long to shake .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 0
 
 i could just feel the screenwriter at every moment ` tap , tap , tap , tap , tapping away ' on this screenplay .
@@ -151,7 +255,11 @@ i could just feel the screenwriter at every moment ` tap , tap , tap , harnessin
 0
 
 overall , cletis tout is a winning comedy that excites the imagination and tickles the funny bone .
+<<<<<<< HEAD
 general , cletis tout is a clockwork comedy that confuses the novelty and tickles the funny bone .
+=======
+unmitigated , cletis tout is a overpowering mockery that excites the imaginations and tickles the funny bone .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 you live the mood rather than savour the story .
@@ -159,6 +267,7 @@ you live the mood rather than enjoy the story .
 1
 
 the movie is so thoughtlessly assembled .
+<<<<<<< HEAD
 the movie is instead thoughtlessly assembled .
 1
 
@@ -168,6 +277,17 @@ some organization is a shaky , uncertain theater that nevertheless touches a few
 
 it 's a very sincere work , but it would be better as a diary or documentary .
 it 's a very full work , but it would be better as a diary or documentary .
+=======
+the movie is too thoughtlessly assembled .
+1
+
+some body is a shaky , uncertain film that nevertheless touches a few raw nerves .
+some body is a shaky , uncertain film that nevertheless afflicts a few raw tendons .
+1
+
+it 's a very sincere work , but it would be better as a diary or documentary .
+it 's a totally fervent operation , but it would be better as a diary or documentary .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 while american adobo has its heart -lrb- and its palate -rrb- in the right place , its brain is a little scattered -- ditsy , even .
@@ -175,6 +295,7 @@ while american adobo has its heart -lrb- and its palais -rrb- in the right place
 0
 
 unfolds with such a wallop of you-are-there immediacy that when the bullets start to fly , your first instinct is to duck .
+<<<<<<< HEAD
 ensues with such a thrash of you-are-there immediacy that when the projectiles start to burgle , your first hunch is to duck .
 1
 
@@ -192,12 +313,32 @@ it 's an funnier movie , and the consequences , boosted to the size of a downtow
 
 it is as uncompromising as it is nonjudgmental , and makes clear that a prostitute can be as lonely and needy as any of the clients .
 it is as rigid as it is nonjudgmental , and makes clear that a prostitute can be as unattached and poor as any of the shoppers .
+=======
+ensues with such a wallop of you-are-there immediacy that when the rounds start to bugs , your first instinct is to duk .
+1
+
+and it 's a lousy one at that .
+and it 's a soiled one at that .
+0
+
+it 's not too fast and not too slow .
+it 's not too immediately and not too slower .
+1
+
+it 's an entertaining movie , and the effects , boosted to the size of a downtown hotel , will all but take you to outer space .
+it 's an distracting movie , and the ramifications , intensifying to the size of a downtown hotel , will all but take you to outer space .
+1
+
+it is as uncompromising as it is nonjudgmental , and makes clear that a prostitute can be as lonely and needy as any of the clients .
+it is as recalcitrant as it is nonjudgmental , and makes gross that a prostitute can be as lonely and needy as any of the customers .
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
 1
 
 compellingly watchable .
 compellingly watchable .
 1
 
+<<<<<<< HEAD
 despite some comic sparks , welcome to collinwood never catches fire .
 despite some lighthearted sparks , welcome to collinwood never catches fire .
 0
@@ -27678,3 +27819,5 @@ a deliciously nonsensical comedy about a city coming apart at its seams .
 a surprisingly nonsensical comedy about a mayor coming apart at its seams .
 1
 
+=======
+>>>>>>> b6b742a04a2945f5e82cfd028d13571397ba527c
