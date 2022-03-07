@@ -26,7 +26,7 @@ class Config():
     cache_dir = 'model_cache/bert_model/bert-base-uncased/'
     finetune_dir = 'repos/text_grad/checkpoints/bert-base-uncased-sst/'
     num_labels = 2
-    log_dir = 'repos/TextAttack/ATLog/'
+    log_dir = 'ATLog/'
 
     # at_type = 'augmentation'  ## augmentation/epoch_aug/batch_aug
     at_type = 'epoch_aug'  ## augmentation/epoch_aug/batch_aug
@@ -53,6 +53,8 @@ else:
 
 train_corpus, train_label,valid_corpus,valid_label,test_corpus, test_label = cls_model.load_dataset()
 
+train_corpus = train_corpus[:10]
+train_label = train_label[:10]
 
 train_set = [(train_corpus[i], train_label[i]) for i in range(len(train_corpus))]
 
@@ -207,7 +209,7 @@ for epoch in range(config.num_epochs):
     #     global_acc = local_acc
     if not os.path.exists(cls_model.output_dir):
         os.makedirs(cls_model.output_dir)
-    save_path = cls_model.output_dir + epoch
+    save_path = cls_model.output_dir + str(epoch)
     cls_model.model.save_pretrained(save_path)
     cls_model.tokenizer.save_pretrained(save_path)
 
