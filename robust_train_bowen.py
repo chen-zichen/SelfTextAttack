@@ -19,12 +19,12 @@ def write_adv(file_addr, orig_list, adv_list, label_list):
 
 class Config():
     model_type = 'bert-base-uncased'
-    output_dir = 'repos/TextAttack/checkpoints/bert-sst-at/'
+    output_dir = 'repos/TextAttack/checkpoints/bert-sst-at/bowen'
     dataset_dir = 'repos/text_grad/sst-2/'
     cache_dir = 'repos/model_cache/bert_model/bert-base-uncased/'
     finetune_dir = 'repos/text_grad/checkpoints/bert-base-uncased-sst/'
     num_labels = 2
-    log_dir = 'ATLog/'
+    log_dir = '/ATLog/'
 
     # at_type = 'augmentation'  ## augmentation/epoch_aug/batch_aug
     # at_type = 'epoch_aug'  ## augmentation/epoch_aug/batch_aug
@@ -50,9 +50,9 @@ else:
     raise NotImplementedError
 
 train_corpus, train_label, valid_corpus, valid_label, test_corpus, test_label = cls_model.load_dataset()
-
-# train_corpus = train_corpus[:100]
-# train_label = train_label[:100]
+output_dir = config.output_dir
+# train_corpus = train_corpus[:50]
+# train_label = train_label[:50]
 
 train_set = [(train_corpus[i], train_label[i]) for i in range(len(train_corpus))]
 
@@ -167,8 +167,8 @@ for epoch in range(config.num_epochs):
             cls_model.model.eval()
             adv_corpus = attacker.perturb(batch_instances)
             adv_labels = batch_labels[:]
-            concat_batch_corpus = batch_corpus + adv_corpus
-            concat_batch_labels = batch_labels + adv_labels
+            concat_batch_corpus = adv_corpus
+            concat_batch_labels = adv_labels
 
             concat_xs, concat_masks = cls_model.tokenize_corpus(concat_batch_corpus)
             batch_xs = torch.LongTensor(concat_xs).to(cls_model.device)
@@ -203,16 +203,17 @@ for epoch in range(config.num_epochs):
     local_acc = cls_model.evaluate_accuracy(valid_xs, valid_ys, valid_masks, batch_size)
     print("valid accuracy = ", local_acc)
     
-    output_dir_epoch = os.path.join(cls_model.output_dir, f'epoch{epoch}')
-    if not os.path.exists(output_dir_epoch):
-        os.makedirs(output_dir_epoch)
-    cls_model.model.save_pretrained(output_dir_epoch)
-    cls_model.tokenizer.save_pretrained(output_dir_epoch)
+    # output_dir_epoch = os.path.join(cls_model.output_dir, f'epoch{epoch}')
+    if not os.path.exists(cls_model.output_dir):
+        os.makedirs(cls_model.output_dir)
+    save_path = cls_model.output_dir + '/' + str(epoch)
+    cls_model.model.save_pretrained(save_path)
+    cls_model.tokenizer.save_pretrained(save_path)
     with open(log_file, 'a') as file1:
         file1.write(f"{epoch}, {epoch_loss}, {epoch_accuracy}, {local_acc} \n")
 
 
-cls_model.model = BertForSequenceClassification.from_pretrained(cls_model.output_dir)
+cls_model.model = BertForSequenceClassification.from_pretrained(save_path)
 cls_model.model.to(cls_model.device)
 print("Test accuracy = ", cls_model.evaluate_accuracy(test_xs,test_ys,test_masks,batch_size))
 print("All done")
